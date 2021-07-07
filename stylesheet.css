@@ -1,0 +1,203 @@
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #207de9;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: 15px;
+}
+
+.nav-items a {
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+/* Make text bigger when hovered */
+.nav-items a:hover {
+    font-size: 2em;
+}
+
+/*-----Welcome section-----*/
+.welcome-section {
+    background: #4686d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    color: #000;
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+}
+
+.welcome-section p {
+    font-size: 20px;
+}
+
+/*-----About section-----*/
+/* Making section into 2 side by side columns */
+.about {
+    background: #303841;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.about img {
+    display: block;
+    width: 50%;
+    height: 600px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 36px;
+}
+
+.about h4 {
+    font-size: 24px;
+}
+
+.about li {
+    padding: 10px;
+}
+
+/*-----Projects Section-----*/
+.projects-section {
+    background:#4686d0;
+    height: 75vh;
+    justify-content: center;
+}
+
+.projects-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+/* Making the grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    margin-left: 640px;
+}
+
+/* Styling the li into boxes */
+.projects-section li {
+    box-sizing: border-box;
+    width: 500px;
+    height: 75px;
+    background: #303841;
+    border: #000;
+    list-style-type: none;
+}
+
+.projects-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    .porjects-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/*-----Contact Section-----*/
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    background: #303841;
+    color: #fff;
+}
+
+.contact-me h2 {
+    font-size: 48px;
+}
+
+.contact-me p {
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 620px;
+    margin-top: 50px;
+}
+
+.social-links a {
+    color: #fff;
+}
+
+.socials {
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: yellow;
+}
+
+/*-----Footer Section-----*/
+footer {
+    background: #4686d0;
+    display: flex;
+    color: #fff;
+    padding-left: 50px;
+
+}
